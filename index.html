@@ -53,7 +53,7 @@
             transform: translateY(-4px);
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: var(--accent-color);
             margin-bottom: 16px;
         }
@@ -99,6 +99,36 @@
         .cta-button:hover {
             background-color: var(--hover-color);
         }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .policies-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .policies-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .policy-card {
+            background-color: rgba(44, 62, 80, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .policy-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -122,18 +152,90 @@
             <h2>Why Choose 10Q Solutions?</h2>
             <p>✅ Custom-built SaaS platforms for business scalability.<br />✅ Expert iOS development for seamless user experiences.<br />✅ Proven track record of delivering high-performance software.</p>
         </div>
+        
+        <div id="policies" class="section">
+            <h2>Our Policies</h2>
+            <p>At 10Q Solutions Ltd, we are committed to providing transparent and fair business practices. Below you'll find all our policies to ensure the best service experience.</p>
+            
+            <div class="policies-container">
+                <div class="policy-card">
+                    <h3>Refund & Dispute Policy</h3>
+                    <p>We strive for complete customer satisfaction. If you're not satisfied with our services:</p>
+                    <ul>
+                        <li>Software development projects can be cancelled with a full refund within 7 days of the initial payment, before development begins.</li>
+                        <li>For ongoing SaaS subscriptions, pro-rated refunds are available based on usage period.</li>
+                        <li>Disputes should be submitted via email with relevant details for prompt resolution.</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-card">
+                    <h3>Cancellation Policy</h3>
+                    <p>Our flexible cancellation terms:</p>
+                    <ul>
+                        <li>SaaS subscriptions can be cancelled at any time, effective at the end of the current billing cycle.</li>
+                        <li>Development projects may incur cancellation fees proportional to work already completed.</li>
+                        <li>Cancellation requests must be submitted in writing.</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-card">
+                    <h3>Terms & Conditions</h3>
+                    <p>Our service agreements include:</p>
+                    <ul>
+                        <li>Detailed project scope and deliverables</li>
+                        <li>Intellectual property rights</li>
+                        <li>Payment schedules and terms</li>
+                        <li>Maintenance and support provisions</li>
+                    </ul>
+                    <p>For full terms and conditions, please <a href="/terms.html">click here</a>.</p>
+                </div>
+                
+                <div class="policy-card">
+                    <h3>Promotional Terms</h3>
+                    <p>When we offer promotions:</p>
+                    <ul>
+                        <li>All promotional offers have clearly defined expiration dates</li>
+                        <li>Discounts cannot be combined unless explicitly stated</li>
+                        <li>We reserve the right to modify or end promotions with reasonable notice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <div id="contact" class="section">
             <h2>Get In Touch</h2>
-            <p>Email us at <a href="mailto:info@10qsolutions.com">info@10qsolutions.com</a> or visit our office:</p>
-            <p>Suite A, 82 James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28 7DE</p>
+            <p>We're here to help with your software development needs. Our customer service team is ready to assist you:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@10qsolutions.com">info@10qsolutions.com</a></li>
+                <li>Address: Suite A, 82 James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28 7DE</li>
+            </ul>
+            </div>
+        
+        <div id="compliance" class="section">
+            <h2>Compliance Information</h2>
+            <p>10Q Solutions Ltd is committed to maintaining the highest standards of business transparency and regulatory compliance.</p>
+            
+            <h3>Know Your Customer (KYC) Compliance</h3>
+            <p>We work with Stripe as our payment processor to provide secure transaction services. In accordance with financial regulations and "Know Your Customer" obligations, we maintain this website with all required business information.</p>
+            
+            <h3>Legal Requirements</h3>
+            <p>This website fulfills payment processor requirements by providing:</p>
+            <ul>
+                <li>Our business name and registration details</li>
+                <li>Clear descriptions of all services offered</li>
+                <li>Multiple customer service contact methods</li>
+                <li>Comprehensive policy information including refunds, disputes, and cancellations</li>
+                <li>Terms and conditions for all services and promotions</li>
+            </ul>
+            
+            <p>For more information about our compliance practices or if you have any questions, please <a href="#contact">contact us</a>.</p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2025 10Q Solutions Ltd. All rights reserved.</p>
         <p>Company Number: Incorporated on 25 April 2024 | SIC: 62012 - Business and domestic software development</p>
-        <p><a href="/privacy.html">Privacy Policy</a></p>
+        <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms & Conditions</a> | <a href="#policies">Business Policies</a></p>
     </footer>
 </body>
 </html>
